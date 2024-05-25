@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: auto;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: ghostwhite;
+    user-select: none;
+    font-family: 'Dosis', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+
+}
+
+.modalMenu {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.900);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 20px;
+    z-index: 200;
+
+}
+
+.modalMenu a {
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+.modalMenu a:hover {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: crimson;
+}
+
+.navbar {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: crimson;
+    padding: 0 10%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.brand {
+    font-size: 2rem;
+    color: white;
+    font-weight: 100;
+    font-family: 'serif', cursive;
+
+}
+
+.menuIcon {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-left: auto;
+
+}
+
+.menuIcon:hover {
+    color: black;
+
+}
+
+.closeIcon {
+    font-size: 2rem;
+    color: red;
+    position: fixed;
+    top: 10vh;
+    right: 10vw;
+}
+
+.closeIcon:hover {
+    font-size: 3rem;
+}
+
+.container section {
+    width: 100vw;
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-style: oblique;
+    font-weight: bolder;
+}
+
+.home {
+    background-image: url(./the-background-301145_1280.png);
+    justify-content: center;
+    align-items: center;
+}
+
+.heroImage {
+    width: 250px;
+    height: 250px;
+    border-radius: 1000px;
+    object-fit: cover;
+    opacity: 0;
+    object-position: top;
+    animation-name: bottomToTop;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+}
+
+/* Basic Button Styling */
+.btn {
+
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display:  inline-flex;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    animation-name: bottomToTop;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+}
+
+/* Hover Effect */
+.btn:hover {
+    background-color: #45a049;
+}
+
+/* Active Effect */
+.btn:active {
+    background-color: #3e8e41; 
+}
+
+.heroText {
+    color: white;
+    font-size: 3rem;
+    opacity: 0;
+    animation-name: bottomToTop;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    font-family: 'Playball', cursive;
+    animation-fill-mode: forwards;
+}
+
+
+.about {
+    background-image: url(https://picsum.photos/seed/92/900);
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+.aboutAlert {
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: ivory;
+    color: blue;
+    position: sticky;
+    top: 10vh;
+    left: 0;
+}
+
+.main {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+@keyframes bottomToTop {
+    from {
+        transform: translateY(20vh);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+}
+
+@keyframes iniRotate {
+    from {
+        transform: rotateX(360deg);
+    }
+
+    to {
+        transform: rotateZ(0);
+    }
+}

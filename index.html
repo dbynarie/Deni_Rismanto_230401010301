@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio & CV Deni Rismanto</title>
+</head>
+
+<body>
+
+    <div class="modalMenu">
+        <span class="material-icons closeIcon" onclick="hideModal()">close</span>
+
+        <a href="#home" onclick="hideModal()">HOME</a>
+        <a href="#about" onclick="hideModal()">ABOUT</a>
+        <a href="#contact" onclick="hideModal()">CONTACT</a>
+        <a href="#gallery" onclick="hideModal()">GALLERY</a>
+    </div>  
+    <nav class="navbar">
+        <h3 class="brand">WEB PORTFOLIO</h3>
+        <span class="material-icons menuIcon" onclick="showModal()">menu</span>
+    </nav>
+    <div class="aboutAlert">
+        WELCOME TO MY WEB PORTFOLIO..
+        <span class="material-icons alertClose" onclick="hideAlert()">close</span>
+    </div>
+    <main class="container">
+        <section class="home" id="home">
+                <img src="./myphoto1.jpeg" alt="fotosaya" class="heroImage">
+                <h1 class="heroText">
+                    <span style="color: #e74c3c;">DENI</span> RISMANTO<span style="color: #e74c3c;"></span>
+                    <hr />
+                    NIM: 230401010301
+                </h1>
+
+            <div class="button">
+                <a href="ats-cv.html"><button class="btn" >My Detail</button></a>
+            </div>
+        </section>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
